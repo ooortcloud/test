@@ -31,7 +31,7 @@ import spring.service.user.UserService;
 //======================  변경된 부분 ====================
 //@RunWith(SpringJUnit4ClassRunner.class)
 //@ContextConfiguration(locations = { "classpath:config/commonservice.xml" })
-// @SpringBootTest
+@SpringBootTest
 public class UserServiceTest {
 
 	//==>@RunWith,@ContextConfiguration 로 지정된 구현체가  Meta-data 를 이용 Wiring
@@ -67,7 +67,7 @@ public class UserServiceTest {
 	
 	//==> @Test를 주석처리 하고 실행하면....
 	//==> 
-	//@Test
+	@Test
 	public void testGetUser() throws Exception {
 		
 		System.out.println("\n===================================");
